@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/trading" >
+        <Preference
+            android:key="pref_balance"
+            android:title="@string/balance"
+            android:summary="$200" />
+
+        <net.gumcode.binarymobile.views.SeekbarDialogPreference
+            android:key="pref_trading_balance"
+            android:title="@string/trading_balance"
+            android:summary="@string/trading_balance_sum"
+            android:positiveButtonText="@string/ok"
+            android:negativeButtonText="@string/cancel" />
+
+        <net.gumcode.binarymobile.views.SeekbarDialogPreference
+            android:key="pref_profit"
+            android:title="@string/profit_target"
+            android:summary="@string/profit_target_sum"
+            android:positiveButtonText="@string/ok"
+            android:negativeButtonText="@string/cancel" />
+
+        <net.gumcode.binarymobile.views.SeekbarDialogPreference
+            android:key="pref_cutloss"
+            android:title="@string/cut_loss"
+            android:summary="@string/cut_loss_sum"
+            android:positiveButtonText="@string/ok"
+            android:negativeButtonText="@string/cancel" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/account" >
+        <Preference
+            android:key="pref_edit"
+            android:title="@string/edit"
+            android:summary="@string/edit_sum"/>
+
+        <Preference
+            android:key="pref_logout"
+            android:title="@string/sign_out"
+            android:summary="@string/sign_out_sum"/>
+    </PreferenceCategory>
+</PreferenceScreen>

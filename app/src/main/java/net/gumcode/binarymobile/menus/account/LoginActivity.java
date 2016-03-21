@@ -1,4 +1,4 @@
-package net.gumcode.binarymobile;
+package net.gumcode.binarymobile.menus.account;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -15,6 +15,9 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import net.gumcode.binarymobile.R;
+import net.gumcode.binarymobile.menus.MainActivity;
 
 /**
  * A login screen that offers login via email/password.

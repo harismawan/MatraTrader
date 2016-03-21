@@ -1,4 +1,4 @@
-package net.gumcode.binarymobile;
+package net.gumcode.binarymobile.menus;
 
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -14,6 +14,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import net.gumcode.binarymobile.R;
+import net.gumcode.binarymobile.menus.account.ReportActivity;
+import net.gumcode.binarymobile.menus.settings.SettingsActivity;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private AlertDialog dialog;
@@ -23,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -93,15 +98,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         Intent change;
-        if (id == R.id.nav_profile) {
-            change = new Intent(MainActivity.this, ProfileActivity.class);
+        if (id == R.id.nav_trading_report) {
+            change = new Intent(MainActivity.this, ReportActivity.class);
             startActivity(change);
         } else if (id == R.id.nav_settings) {
             change = new Intent(MainActivity.this, SettingsActivity.class);

@@ -9,28 +9,299 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="net.gumcode.binarymobile.MainActivity"
+    tools:context=".menus.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
     <TextView
+        android:id="@+id/binary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to Binary Mobile APP"
-        android:layout_above="@+id/connect"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
         android:gravity="center"
-        android:textSize="24sp"/>
+        android:padding="10dp"
+        android:text="@string/binary"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tokenT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/binary"
+        android:text="@string/binary_token"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/one"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginStart="5dp"-->
+    <!--android:layout_toEndOf="@id/emailT"-->
+    <!--android:layout_toRightOf="@id/emailT"-->
+    <!--android:text=":"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/binary"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/tokenT"
+        android:layout_toRightOf="@id/tokenT"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text="A1s14l57adBG"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/detailCRT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tokenT"
+        android:layout_marginTop="10dp"
+        android:text="@string/detail_cr"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/two"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/one"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginStart="5dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_toEndOf="@id/emailT"-->
+    <!--android:layout_toRightOf="@id/emailT"-->
+    <!--android:text=":"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/detailCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/token"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/detailCRT"
+        android:layout_toRightOf="@id/detailCRT"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text="Loremipsum"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/emailT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailCRT"
+        android:layout_marginTop="10dp"
+        android:text="@string/email"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/three"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/two"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginStart="5dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_toEndOf="@id/emailT"-->
+    <!--android:layout_toRightOf="@id/emailT"-->
+    <!--android:text=":"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailCR"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/emailT"
+        android:layout_toRightOf="@id/emailT"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text="demo@binary.com"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailT"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/server"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tokenST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/server"
+        android:text="@string/server_token"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/one"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginStart="5dp"-->
+    <!--android:layout_toEndOf="@id/emailT"-->
+    <!--android:layout_toRightOf="@id/emailT"-->
+    <!--android:text=":"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/tokenS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/server"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/tokenST"
+        android:layout_toRightOf="@id/tokenST"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text="A1s14l57adBG"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/validityT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tokenST"
+        android:layout_marginTop="10dp"
+        android:text="@string/validity"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/two"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/one"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginStart="5dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_toEndOf="@id/emailT"-->
+    <!--android:layout_toRightOf="@id/emailT"-->
+    <!--android:text=":"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/validity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tokenS"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/validityT"
+        android:layout_toRightOf="@id/validityT"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text="20 December 2016"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/emailST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/validityT"
+        android:layout_marginTop="10dp"
+        android:text="@string/email"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/three"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/two"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginStart="5dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_toEndOf="@id/emailT"-->
+    <!--android:layout_toRightOf="@id/emailT"-->
+    <!--android:text=":"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="bold" />-->
+
+    <TextView
+        android:id="@+id/emailS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/validity"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/emailST"
+        android:layout_toRightOf="@id/emailST"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text="demo@demo.com"
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/connect"
         style="?android:textAppearanceSmall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/emailST"
+        android:layout_marginTop="20dp"
         android:background="@color/connected"
-        android:textColor="@android:color/white"
         android:text="@string/action_connect"
+        android:textColor="@android:color/white"
         android:textStyle="bold" />
 
 </RelativeLayout>

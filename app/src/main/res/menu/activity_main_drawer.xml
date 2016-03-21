@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!--<item-->
+        <!--android:id="@+id/nav_account_detail"-->
+        <!--android:icon="@drawable/ic_account_circle_white_48dp"-->
+        <!--android:title="@string/action_profile" />-->
+
     <item
-        android:id="@+id/nav_profile"
-        android:icon="@drawable/ic_account_circle_white_48dp"
-        android:title="Profile" />
+        android:id="@+id/nav_trading_report"
+        android:icon="@drawable/ic_history_white_48dp"
+        android:title="@string/action_trading_report" />
 
     <item
         android:id="@+id/nav_settings"
         android:icon="@drawable/ic_settings_white_48dp"
-        android:title="Settings" />
+        android:title="@string/action_settings" />
+
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/ic_help_white_48dp"
+        android:title="@string/action_help" />
 
     <item
         android:id="@+id/nav_about"
         android:icon="@drawable/ic_info_white_48dp"
-        android:title="About" />
+        android:title="@string/action_about" />
 </menu>
