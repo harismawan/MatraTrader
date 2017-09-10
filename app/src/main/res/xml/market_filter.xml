@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="pref_r_25"
+        android:title="R_25"
+        android:summary="Index Random 25"/>
+
+    <SwitchPreference
+        android:key="pref_r_50"
+        android:title="R_50"
+        android:summary="Index Random 50"/>
+
+    <SwitchPreference
+        android:key="pref_r_75"
+        android:title="R_75"
+        android:summary="Index Random 75"/>
+
+    <SwitchPreference
+        android:key="pref_r_100"
+        android:title="R_100"
+        android:summary="Index Random 100"/>
+
+    <SwitchPreference
+        android:key="pref_r_bear"
+        android:title="R_BEAR"
+        android:summary="Index Random Bear"/>
+
+    <SwitchPreference
+        android:key="pref_r_bull"
+        android:title="R_BULL"
+        android:summary="Index Random Bull"/>
+
+    <SwitchPreference
+        android:key="pref_r_mars"
+        android:title="R_MARS"
+        android:summary="Index Random Mars"/>
+
+    <SwitchPreference
+        android:key="pref_r_moon"
+        android:title="R_MOON"
+        android:summary="Index Random Moon"/>
+
+    <SwitchPreference
+        android:key="pref_r_sun"
+        android:title="R_SUN"
+        android:summary="Index Random Sun"/>
+
+    <SwitchPreference
+        android:key="pref_r_venus"
+        android:title="R_VENUS"
+        android:summary="Index Random Venus"/>
+
+    <SwitchPreference
+        android:key="pref_r_yin"
+        android:title="R_YIN"
+        android:summary="Index Random Yin"/>
+
+    <SwitchPreference
+        android:key="pref_r_yang"
+        android:title="R_YANG"
+        android:summary="Index Random Yang"/>
+</PreferenceScreen>

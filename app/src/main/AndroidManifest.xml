@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="net.gumcode.binarymobile">
+    package="net.gumcode.matratrader">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="net.gumcode.matratrader.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="net.gumcode.matratrader.permission.C2D_MESSAGE" />
 
     <application
         android:allowBackup="true"
@@ -8,10 +15,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true">
         <activity
-            android:name=".menus.account.LoginActivity"
+            android:name="net.gumcode.matratrader.SplashActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.Dark"
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:theme="@style/AppTheme.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,17 +25,97 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".menus.MainActivity"
+            android:name="net.gumcode.matratrader.menus.account.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Dark"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="net.gumcode.matratrader.menus.account.RegisterActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Dark"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="net.gumcode.matratrader.menus.account.AddTokenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Dark"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="net.gumcode.matratrader.MainMenuActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".menus.account.ReportActivity"
+            android:name=".menus.status.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".menus.report.ReportActivity"
             android:label="@string/action_trading_report"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".menus.settings.SettingsActivity"
+            android:name=".menus.progress.ProgressActivity"
+            android:label="@string/action_trading_progress"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="net.gumcode.matratrader.menus.settings.SettingsActivity"
             android:label="@string/action_settings"
             android:theme="@style/AppTheme"/>
+        <activity
+            android:name="net.gumcode.matratrader.menus.settings.MarketFilterActivity"
+            android:label="@string/action_settings"
+            android:theme="@style/AppTheme"/>
+
+        <service
+            android:name=".services.StreamService"
+            android:process=":StreamService"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Stream Service">
+        </service>
+
+        <service
+            android:name=".services.GCMMessageHandler"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".services.RegistrationIntentService" android:exported="false"/>
+
+        <service
+            android:name=".services.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+
+        <!--<receiver-->
+            <!--android:name=".services.MSGReceiver"-->
+            <!--android:permission="com.google.android.c2dm.permission.SEND" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
+
+                <!--<category android:name="net.gumcode.matratrader" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<receiver-->
+            <!--android:name=".services.GCMBroadcastReceiver"-->
+            <!--android:exported="true"-->
+            <!--android:permission="com.google.android.c2dm.permission.SEND" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.google.android.c2dm.intent.RECEIVE" />-->
+                <!--<category android:name="net.gumcode.matratrader" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="net.gumcode.matratrader" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

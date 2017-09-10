@@ -7,6 +7,11 @@
         <!--android:title="@string/action_profile" />-->
 
     <item
+        android:id="@+id/nav_trading_progress"
+        android:icon="@drawable/ic_show_chart_white_48dp"
+        android:title="@string/action_trading_progress" />
+
+    <item
         android:id="@+id/nav_trading_report"
         android:icon="@drawable/ic_history_white_48dp"
         android:title="@string/action_trading_report" />

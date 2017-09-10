@@ -1,4 +1,4 @@
-package net.gumcode.binarymobile;
+package net.gumcode.matratrader;
 
 import org.junit.Test;
 

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <Switch
+        android:id="@+id/r_25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="R_25"/>
+
+    <Switch
+        android:id="@+id/r_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="R_50"/>
+
+    <Switch
+        android:id="@+id/r_75"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="R_75"/>
+
+    <Switch
+        android:id="@+id/r_100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="R_100"/>
+
+    <!--<Switch-->
+        <!--android:id="@+id/r_bull"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:text="R_BULL"/>-->
+
+    <!--<Switch-->
+        <!--android:id="@+id/r_bear"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:text="R_BEAR"/>-->
+
+    <!--<Switch-->
+        <!--android:id="@+id/r_mars"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:text="R_MARS"/>-->
+
+    <!--<Switch-->
+        <!--android:id="@+id/r_moon"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:text="R_MOON"/>-->
+
+    <!--<Switch-->
+        <!--android:id="@+id/r_sun"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:text="R_SUN"/>-->
+
+    <!--<Switch-->
+        <!--android:id="@+id/r_venus"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:text="R_VENUS"/>-->
+
+    <!--<Switch-->
+        <!--android:id="@+id/r_yin"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:text="R_YIN"/>-->
+
+    <!--<Switch-->
+        <!--android:id="@+id/r_yang"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:text="R_YANG"/>-->
+</LinearLayout>

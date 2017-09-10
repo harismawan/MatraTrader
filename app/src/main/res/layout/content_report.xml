@@ -5,13 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".menus.account.ReportActivity"
+    tools:context=".menus.report.ReportActivity"
     tools:showIn="@layout/activity_report">
 
-    <de.codecrafters.tableview.SortableTableView
-        android:id="@+id/table"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        table:columnCount="4"
-        table:headerColor="?attr/colorPrimary" />
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/ttl">
+
+        <de.codecrafters.tableview.SortableTableView
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            table:columnCount="4"
+            table:headerColor="?attr/colorPrimary" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ttl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="TOTAL MARGIN"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="end"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
 </RelativeLayout>

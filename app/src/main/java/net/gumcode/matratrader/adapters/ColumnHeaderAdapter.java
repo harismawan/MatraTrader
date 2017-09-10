@@ -1,4 +1,4 @@
-package net.gumcode.binarymobile.adapters;
+package net.gumcode.matratrader.adapters;
 
 import android.content.Context;
 import android.graphics.Color;

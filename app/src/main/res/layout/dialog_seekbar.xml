@@ -5,11 +5,11 @@
     android:padding="@dimen/activity_horizontal_margin">
 
     <TextView
+        android:id="@+id/percent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:text="@string/amount" />
+        android:gravity="center" />
 
     <SeekBar
         android:id="@+id/seekbar"
@@ -17,9 +17,9 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/percent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:gravity="center" />
+        android:gravity="center"
+        android:text="@string/amount" />
 </LinearLayout>

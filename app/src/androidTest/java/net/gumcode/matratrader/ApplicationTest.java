@@ -1,4 +1,4 @@
-package net.gumcode.binarymobile;
+package net.gumcode.matratrader;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
