@@ -1,4 +1,6 @@
 # MatraTrader
+Mobile application for trading automation on https://www.binary.com using automatic trading algorithm.
+
 
 ### This project is using the following library:
 + <a href="https://github.com/ISchwarz23/SortableTableView">SortableTableView</a>
